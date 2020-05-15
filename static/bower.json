@@ -1,0 +1,21 @@
+{
+  "name": "static",
+  "homepage": "https://github.com/",
+  "authors": [
+    "meyers007 <meyers@geospaces.org>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.1"
+  }
+}
