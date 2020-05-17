@@ -1,43 +1,66 @@
 {% extends "common.html" %}
 {% block content %}
 
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for carousel items -->
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="height:300px;" >
+            <img src="/static/imgs/slide2.png"   alt="First Slide"> Hello
+        </div>
+        <div class="carousel-item" style="height:300px;">
+            <img src="/static/imgs/slide1.png"   alt="Second Slide">
+        </div>
+        <div class="carousel-item" style="height:300px;">
+            <img src="/static/imgs/slide3.png"  style="repeat-y; " alt="Third Slide">
+        </div>
+    </div>
+    <!-- Carousel controls -->
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+<br/>
+<div class="text-center" style="margin: 0px auto;">
+<table width=100% style="text-align:center;" border=0><tr>
+    <td><div class="card" style="width: 18rem;margin: 0px auto;">
 
-<pre>
+  <div class="card-body">
+    <h5 class="card-title">Consulting</h5>
+    <p class="card-text">
+        Take a look at the quick samples of what we can do before you engage.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+        </div></td>
+    <td><div class="card" style="width: 18rem;margin: 0px auto;">
 
-Hello 1
+  <div class="card-body">
+    <h5 class="card-title">Free Software</h5>
+    <p class="card-text">Download free contents -  make up the body of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+    </div></td>
 
-Hello
+    <td><div class="card" style="width: 18rem;margin: 0px auto;">
 
-Hello
-
-Hello
-
-Hello
-
-Hello
-
-Hello
-
-Hello
-
-Hello
-
-Hello
-
-
-Hello
-
-Hello
-
-Hello
-
-Hello
-
-Hello
-
-Hello
-
-</pre>
+  <div class="card-body">
+    <h5 class="card-title">Data Science & Yoga</h5>
+    <p class="card-text">Breath in and out and Dance with the data and call OOOOMMMM.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+        </div></td>
+    <td><div style="height:390px;">.</div></td>
+</tr>
+</table>
+</div>
+<br/>
 {% include "footer.html" %}
 
 {% endblock %}
